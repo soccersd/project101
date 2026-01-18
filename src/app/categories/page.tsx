@@ -76,7 +76,10 @@ export default function CategoriesPage() {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
-        setIsLoaded(true);
+        const t = setTimeout(() => {
+            setIsLoaded(true);
+        }, 10);
+        return () => clearTimeout(t);
     }, []);
 
     return (

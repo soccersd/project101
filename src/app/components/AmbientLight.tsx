@@ -1,24 +1,33 @@
 "use client";
-import { useRef, useMemo } from "react";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { useRef, useState } from "react";
+import { Canvas, useFrame, useThree, ThreeElements } from "@react-three/fiber";
 
 import * as THREE from "three";
+
+type LightOrbProps = ThreeElements['mesh'] & {
+    color: string;
+    speed?: number;
+    offset?: number;
+    scaleNumber?: number; // Avoid conflict with mesh scale
+    position?: [number, number, number];
+}
 
 function LightOrb({
     color,
     speed = 1,
     offset = 0,
-    scale = 1,
+    scaleNumber = 1,
     position = [0, 0, 0],
     ...props
-}: any) {
+}: LightOrbProps) {
     const mesh = useRef<THREE.Mesh>(null);
     const { viewport, mouse } = useThree();
 
     // Random movement parameters
-    const timeOffset = useMemo(() => Math.random() * 100, []);
+    // Random movement parameters - use useState for stability across renders
+    const [timeOffset] = useState(() => Math.random() * 100);
 
-    useFrame((state: any) => {
+    useFrame((state) => {
         if (!mesh.current) return;
         const time = state.clock.getElapsedTime();
 
@@ -40,7 +49,7 @@ function LightOrb({
         );
 
         // Pulse scale
-        const s = scale + Math.sin(time * 0.5 + offset) * 0.1;
+        const s = scaleNumber + Math.sin(time * 0.5 + offset) * 0.1;
         mesh.current.scale.set(s, s, s);
     });
 
@@ -59,22 +68,6 @@ function LightOrb({
     );
 }
 
-function FoggyLayer() {
-    return (
-        <mesh scale={[100, 100, 1]}>
-            <planeGeometry />
-            <meshBasicMaterial
-                color="#ffffff"
-                transparent
-                opacity={0.8}
-                blending={THREE.CustomBlending}
-                blendEquation={THREE.AddEquation}
-                blendSrc={THREE.DstColorFactor}
-                blendDst={THREE.ZeroFactor}
-            />
-        </mesh>
-    );
-}
 
 export default function AmbientLight() {
     return (
@@ -89,7 +82,7 @@ export default function AmbientLight() {
                 <LightOrb
                     position={[0, 0, 0]}
                     color="#fb923c"
-                    scale={3.5}
+                    scaleNumber={3.5}
                     speed={0.5}
                 />
 
@@ -97,7 +90,7 @@ export default function AmbientLight() {
                 <LightOrb
                     position={[-2, 2, 0]}
                     color="#fdba74"
-                    scale={4.5}
+                    scaleNumber={4.5}
                     speed={-0.3}
                     offset={2}
                 />
@@ -106,7 +99,7 @@ export default function AmbientLight() {
                 <LightOrb
                     position={[2, -2, 0]}
                     color="#f97316"
-                    scale={2.5}
+                    scaleNumber={2.5}
                     speed={0.2}
                     offset={4}
                 />
@@ -115,7 +108,7 @@ export default function AmbientLight() {
                 <LightOrb
                     position={[3, 1, 0]}
                     color="#fed7aa"
-                    scale={3}
+                    scaleNumber={3}
                     speed={0.15}
                     offset={6}
                 />

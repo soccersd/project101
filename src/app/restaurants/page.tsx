@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+
 import Navbar from "../components/Navbar";
 import FloatingButton from "../components/FloatingButton";
 import AmbientLightLite from "../components/AmbientLightLite";
@@ -12,7 +12,10 @@ export default function RestaurantsPage() {
 
     useEffect(() => {
         // Quick load trigger instead of heavy GSAP with delays
-        setIsLoaded(true);
+        const t = setTimeout(() => {
+            setIsLoaded(true);
+        }, 10);
+        return () => clearTimeout(t);
     }, []);
 
     return (

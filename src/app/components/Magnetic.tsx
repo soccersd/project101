@@ -26,14 +26,16 @@ export default function Magnetic({ children }: { children: React.ReactElement })
             yTo(0);
         };
 
-        magnetic.current?.addEventListener("mousemove", mouseMove);
-        magnetic.current?.addEventListener("mouseleave", mouseLeave);
+        const el = magnetic.current;
+        el?.addEventListener("mousemove", mouseMove);
+        el?.addEventListener("mouseleave", mouseLeave);
 
         return () => {
-            magnetic.current?.removeEventListener("mousemove", mouseMove);
-            magnetic.current?.removeEventListener("mouseleave", mouseLeave);
+            el?.removeEventListener("mousemove", mouseMove);
+            el?.removeEventListener("mouseleave", mouseLeave);
         };
     }, []);
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any, react-hooks/refs
     return React.cloneElement(children as any, { ref: magnetic });
 }

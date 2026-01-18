@@ -59,7 +59,10 @@ export default function ContactPage() {
     });
 
     useEffect(() => {
-        setIsLoaded(true);
+        const t = setTimeout(() => {
+            setIsLoaded(true);
+        }, 10);
+        return () => clearTimeout(t);
     }, []);
 
     const handleSubmit = (e: React.FormEvent) => {

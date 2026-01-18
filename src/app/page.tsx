@@ -1,26 +1,21 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import QuoteSection from "./components/QuoteSection";
-import Footer from "./components/Footer";
 import LogoCarousel from "./components/LogoCarousel";
 import Magnetic from "./components/Magnetic";
 import AmbientLight from "./components/AmbientLight";
 import Navbar from "./components/Navbar";
 import FloatingButton from "./components/FloatingButton";
 
-import { restaurants } from "@/data/restaurants";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Get featured restaurants (first 6 with priority to those with badges)
-const featuredRestaurants = [...restaurants]
-  .sort((a, b) => (b.badge ? 1 : 0) - (a.badge ? 1 : 0))
-  .slice(0, 6);
+
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement>(null);

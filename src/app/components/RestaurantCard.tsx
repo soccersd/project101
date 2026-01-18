@@ -1,7 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
+
 
 interface RestaurantProps {
     data: {
@@ -18,13 +18,11 @@ interface RestaurantProps {
 }
 
 export default function RestaurantCard({ data, className = "" }: RestaurantProps) {
-    const [isHovered, setIsHovered] = useState(false);
+
 
     return (
         <div
             className={`group relative bg-white rounded-2xl overflow-hidden border border-zinc-100/80 shadow-sm transition-all duration-500 ease-out hover:shadow-2xl hover:shadow-orange-500/8 hover:-translate-y-2 hover:border-orange-100 flex flex-col h-full ${className}`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
         >
             {/* Image Container */}
             <div className="relative h-56 lg:h-64 overflow-hidden">
