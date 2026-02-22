@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import AmbientLightLite from "../components/AmbientLightLite";
 import RestaurantCard from "../components/RestaurantCard";
+import MapModal from "../components/MapModal";
 import { services } from "@/data/services";
 
 export default function ServicesPage() {
     const [isLoaded, setIsLoaded] = useState(false);
+    const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
 
     useEffect(() => {
         const t = setTimeout(() => {
@@ -69,6 +71,7 @@ export default function ServicesPage() {
                                     <RestaurantCard
                                         data={service}
                                         className={isLarge ? "md:col-span-2 lg:col-span-2" : "md:col-span-1"}
+                                        onClick={() => setSelectedService(service)}
                                     />
                                 </div>
                             );
@@ -76,6 +79,15 @@ export default function ServicesPage() {
                     </div>
                 </div>
             </main>
+
+            {/* Map Modal */}
+            <MapModal
+                isOpen={!!selectedService}
+                onClose={() => setSelectedService(null)}
+                restaurantName={selectedService?.name || ""}
+                location={selectedService?.location || ""}
+                mapEmbedUrl={(selectedService as any)?.mapEmbedUrl}
+            />
 
         </div>
     );

@@ -5,10 +5,12 @@ import Navbar from "../components/Navbar";
 import FloatingButton from "../components/FloatingButton";
 import AmbientLightLite from "../components/AmbientLightLite";
 import RestaurantCard from "../components/RestaurantCard";
+import MapModal from "../components/MapModal";
 import { restaurants } from "@/data/restaurants";
 
 export default function RestaurantsPage() {
     const [isLoaded, setIsLoaded] = useState(false);
+    const [selectedRestaurant, setSelectedRestaurant] = useState<typeof restaurants[0] | null>(null);
 
     useEffect(() => {
         // Quick load trigger instead of heavy GSAP with delays
@@ -73,6 +75,7 @@ export default function RestaurantsPage() {
                                     <RestaurantCard
                                         data={restaurant}
                                         className={isLarge ? "md:col-span-2 lg:col-span-2" : "md:col-span-1"}
+                                        onClick={() => setSelectedRestaurant(restaurant)} // Added onClick to open modal
                                     />
                                 </div>
                             );
@@ -80,6 +83,15 @@ export default function RestaurantsPage() {
                     </div>
                 </div>
             </main>
+
+            {/* Map Modal */}
+            <MapModal
+                isOpen={!!selectedRestaurant}
+                onClose={() => setSelectedRestaurant(null)}
+                restaurantName={selectedRestaurant?.name || ""}
+                location={selectedRestaurant?.location || ""}
+                mapEmbedUrl={(selectedRestaurant as any)?.mapEmbedUrl}
+            />
 
         </div>
     );
