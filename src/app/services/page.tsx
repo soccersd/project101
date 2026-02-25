@@ -86,7 +86,7 @@ export default function ServicesPage() {
                 onClose={() => setSelectedService(null)}
                 restaurantName={selectedService?.name || ""}
                 location={selectedService?.location || ""}
-                mapEmbedUrl={(selectedService as any)?.mapEmbedUrl}
+                mapEmbedUrl={selectedService?.mapEmbedUrl}
             />
 
         </div>

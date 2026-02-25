@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 interface MapModalProps {
     isOpen: boolean;
@@ -10,20 +10,19 @@ interface MapModalProps {
 }
 
 export default function MapModal({ isOpen, onClose, restaurantName, location, mapEmbedUrl }: MapModalProps) {
-    const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         if (isOpen) {
-            setIsVisible(true);
             document.body.style.overflow = "hidden";
         } else {
-            const timer = setTimeout(() => setIsVisible(false), 300);
             document.body.style.overflow = "unset";
-            return () => clearTimeout(timer);
         }
+        return () => {
+            document.body.style.overflow = "unset";
+        };
     }, [isOpen]);
 
-    if (!isVisible && !isOpen) return null;
+    if (!isOpen) return null;
 
     const query = encodeURIComponent(`${restaurantName} ${location}`);
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || "";
@@ -39,14 +38,14 @@ export default function MapModal({ isOpen, onClose, restaurantName, location, ma
 
     return (
         <div
-            className={`fixed inset-0 z-50 flex items-center justify-center p-4 transition-all duration-300 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-100 animate-in fade-in duration-200"
         >
             <div
-                className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
+                className="absolute inset-0 bg-black/60 backdrop-blur-sm"
                 onClick={onClose}
             />
             <div
-                className={`relative bg-white w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] transition-all duration-300 transform ${isOpen ? "scale-100 translate-y-0" : "scale-95 translate-y-8"}`}
+                className="relative bg-white w-full max-w-3xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in zoom-in-95 slide-in-from-bottom-4 duration-300"
             >
                 <div className="p-4 md:p-6 border-b border-zinc-100 flex justify-between items-center bg-white sticky top-0 z-10">
                     <div>
