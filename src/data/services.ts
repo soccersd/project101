@@ -349,49 +349,6 @@ export const services = [
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2165102252716!2d100.51315137509586!3d13.826033786710601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b71641b88db%3A0xf781d8a1d4a643e4!2zVEIgQmFyYmVyIOC4quC4suC4guC4sjIgKOC4o-C5ieC4suC4meC4leC4seC4lOC4nOC4oeC4iuC4suC4oik!5e0!3m2!1sth!2sth!4v1771415774219!5m2!1sth!2sth"
     },
     {
-        name: "Pit Barber Vintage",
-        description: "ร้านตัดผมชายสไตล์วินเทจและเกาหลี Mullet, Wolf Cut, Two Block งานละเอียด (จองคิวเท่านั้น)",
-        location: "วงศ์สว่าง 11",
-        price: "$$",
-        cuisine: "Barber Shop",
-        status: "จองคิว",
-        image: "/images/services/photo2.png",
-        hours: "นัดจองคิว",
-        tel: "",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2165102252716!2d100.51315137509586!3d13.826033786710601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b21f5180435%3A0x38e82ef720b79b67!2z4Lij4LmJ4Liy4LiZ4LiX4Liz4Lic4LihIFBpdCBCYXJiZXIgVmludGFnZQ!5e0!3m2!1sth!2sth!4v1771415789777!5m2!1sth!2sth"
-    },
-    {
-        name: "Prince HairCut & Tattoo",
-        description: "รวมบริการตัดผมเข้ากับศิลปะการสัก ซึ่งตอบโจทย์กลุ่ม Sub-culture ของวัยรุ่น",
-        location: "ตึก SP Apartment (ตรงข้ามกูโรตี)",
-        price: "$$",
-        cuisine: "Barber & Tattoo",
-        status: "วัยรุ่นชอบ",
-        image: "/images/services/photo3.png",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.1146027400814!2d100.505071675292!3d13.832156295427575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bf7acca1489%3A0x9e32405968d6a3dc!2zUHJpbmNlIGhhaXJjdXQgJiB0YXR0b28g4LiL4Lit4Lii4Lin4Lix4LiU4LiB4Liz4LmB4Lie4LiH!5e0!3m2!1sth!2sth!4v1771415806446!5m2!1sth!2sth"
-    },
-    {
-        name: "Computer To Homes",
-        description: "บริการซ่อมคอมพิวเตอร์นอกสถานที่ ลงโปรแกรม แก้ปัญหาฮาร์ดแวร์ บริการถึงหอพัก",
-        location: "บริการถึงที่ (On-site)",
-        price: "$$",
-        cuisine: "ซ่อมคอมพิวเตอร์",
-        status: "ถึงที่",
-        image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15496.456691781339!2d100.4973468523681!3d13.832182111476845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9c8c75796f%3A0x4057904ac6b68288!2sBIG%20COMPUTER%20SERVICES!5e0!3m2!1sth!2sth!4v1771415828335!5m2!1sth!2sth"
-    },
-    {
-        name: "Tooth Place Dental Clinic",
-        description: "คลินิกทันตกรรมครบวงจร บริการจัดฟัน รีเทนเนอร์ และทันตกรรมทั่วไป เดินทางสะดวก",
-        location: "ปากทางวงศ์สว่าง 11",
-        price: "$$",
-        cuisine: "คลินิกทันตกรรม",
-        status: "จัดฟัน",
-        badge: "ยอดนิยม",
-        image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.352322148267!2d100.51347997529184!3d13.81787019576003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bc6e3237803%3A0xf54f0afb5f6de0e7!2sTooth%20place%20dental%20clinic!5e0!3m2!1sth!2sth!4v1771415847050!5m2!1sth!2sth"
-    },
-    {
         name: "Otteri Wash and Dry",
         description: "บริการสะดวกซักยอดนิยม เปิดให้บริการ 24 ชั่วโมง",
         location: "ตั้งอยู่ที่หอพัก Grove Residence",

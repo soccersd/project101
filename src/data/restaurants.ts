@@ -102,7 +102,7 @@ export const restaurants = [
         price: "$",
         cuisine: "ก๋วยเตี๋ยว",
         status: "ยอดนิยม",
-        image: "/images/restaurants/img40.jpg",
+        image: "/images/restaurants/img44.jpg",
         hours: "ทุกวัน 11:00-20:30 น.",
         tel: "063 761 3266",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2789425571004!2d100.51276167529197!3d13.822281595657467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b6642ed4ce9%3A0xb6a81004c2d15f46!2z4LiB4LmL4Lin4Lii4LmA4LiV4Li14LmL4Lii4Lin4LmE4LiB4LmIIOC4o-C4quC5gOC4lOC5h-C4lCDguKvguKXguLHguIfguKHguK0!5e0!3m2!1sth!2sth!4v1771413868893!5m2!1sth!2sth"
@@ -114,7 +114,7 @@ export const restaurants = [
         price: "$",
         cuisine: "ข้าวมันไก่",
         status: "ขายหมดไว",
-        image: "/images/restaurants/img44.jpg",
+        image: "/images/restaurants/img48.jpg",
         hours: "ทุกวัน 08:00-12:00 น.",
         tel: "080 286 8913",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7748.561132439561!2d100.50523769357912!3d13.822184000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b94dcab7879%3A0x5c7bbc84be31c41!2z4LiC4LmJ4Liy4Lin4Lih4Lix4LiZ4LiB4Lix4LmI4Lii!5e0!3m2!1sth!2sth!4v1771413896807!5m2!1sth!2sth"
@@ -127,7 +127,7 @@ export const restaurants = [
         cuisine: "หม่าล่า",
         status: "มาแรง",
         badge: "New",
-        image: "/images/restaurants/img48.jpg",
+        image: "/images/restaurants/img52.jpg",
         hours: "ทุกวัน 11:00-21:00 น.",
         tel: "080 082 2972",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.273021485976!2d100.51260107529185!3d13.822637495649081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9248a3d32f%3A0x47f69953c48dae16!2z4Lih4Liy4Lir4Liy4Lir4LiZ4LmI4Lit4LiiIOC4q-C4oeC5iOC4suC4peC5iOC4suC4l-C4seC5iOC4hyDguKrguLLguILguLIg4LihLuC5gOC4l-C4hOC5guC4meC5guC4peC4ouC4teC4nuC4o-C4sOC4iOC4reC4oeC5gOC4geC4peC5ieC4suC4nuC4o-C4sOC4meC4hOC4o-C5gOC4q-C4meC4t-C4rSAoTWFoYW5vaSBNYWxhdGFuZyBLTVVUTkIp!5e0!3m2!1sth!2sth!4v1771413927684!5m2!1sth!2sth"
@@ -139,7 +139,7 @@ export const restaurants = [
         price: "$$",
         cuisine: "หมูกระทะ",
         status: "เปิดเย็น",
-        image: "/images/restaurants/img52.jpg",
+        image: "/images/restaurants/img56.jpg",
         hours: "จันทร์-เสาร์ 15:00-23:00 น.",
         tel: "099 446 4423",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2740136308475!2d100.51042788126895!3d13.82257786106039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bc6946290af%3A0xcefc8ddb16582cb9!2z4LiK4Liy4LiB4Liw4Lia4Li54Lir4Lih4Li54LiB4Liw4LiX4Liw!5e0!3m2!1sth!2sth!4v1771413956918!5m2!1sth!2sth"
@@ -151,7 +151,7 @@ export const restaurants = [
         price: "$$",
         cuisine: "คาเฟ่",
         status: "ชิลล์",
-        image: "/images/restaurants/img56.jpg",
+        image: "/images/restaurants/img60.jpg",
         hours: "จันทร์-ศุกร์ 9:30-19:30, เสาร์ 10:00-18:00 น.",
         tel: "",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2740136308475!2d100.51042788126895!3d13.82257786106039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bcb3153906b%3A0xb1ba5bd06fd305c4!2z4LiL4Lit4Lij4Li14LmIIOC4l-C4teC5iOC4oeC4suC4iuC5ieC4sg!5e0!3m2!1sth!2sth!4v1771413978061!5m2!1sth!2sth"
@@ -163,7 +163,7 @@ export const restaurants = [
         price: "$",
         cuisine: "อีสาน",
         status: "แซ่บ",
-        image: "/images/restaurants/img60.jpg",
+        image: "/images/restaurants/img64.jpg",
         hours: "ทุกวัน 11:00-22:00 น.",
         tel: "092 590 9676",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2711132022037!2d100.5130017752919!3d13.822752195646475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9c5f1f4dd9%3A0x9303e8ae8845a892!2z4Lij4LmJ4Liy4LiZ4LmB4LiL4LmI4Lia4LiL4Li14LmK4LiUIOC4q-C4peC4seC4h-C4oeC4rSDguKHguIjguJ4u!5e0!3m2!1sth!2sth!4v1771413994114!5m2!1sth!2sth"
@@ -175,7 +175,7 @@ export const restaurants = [
         price: "$",
         cuisine: "สเต็ก",
         status: "คุ้มค่า",
-        image: "/images/restaurants/img64.jpg",
+        image: "/images/restaurants/img68.jpg",
         hours: "จันทร์-เสาร์ 14:30-21:30 น.",
         tel: "087 674 1033",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.259283825604!2d100.51351437529186!3d13.82346319562995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9cfb6cd665%3A0xd4857cb181e424fa!2zT2ggWWVzIFN0ZWFrIOC5guC4reC5ieC4p-C5gOC4ouC4qiDguKrguYDguJXguYfguIEg4Liq4Liy4LiC4LiyMSDguJ7guKPguLDguKPguLLguKE3!5e0!3m2!1sth!2sth!4v1771414012850!5m2!1sth!2sth"
@@ -187,7 +187,7 @@ export const restaurants = [
         price: "$$",
         cuisine: "อาหารญี่ปุ่น",
         status: "อร่อย",
-        image: "/images/restaurants/img68.jpg",
+        image: "/images/restaurants/img73.jpg",
         hours: "จันทร์-เสาร์ 10:30-21:00 น.",
         tel: "090 979 0806",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2535985247628!2d100.51379537529189!3d13.823804895621919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b3100485e21%3A0x49594791eb0f2b10!2z4LiU4LmJ4LiH4Lib4LmI4Liw!5e0!3m2!1sth!2sth!4v1771414119577!5m2!1sth!2sth"
@@ -200,7 +200,7 @@ export const restaurants = [
         cuisine: "จีน / หมาล่า",
         status: "คิวแน่น",
         badge: "ยอดนิยม",
-        image: "/images/restaurants/img73.jpg",
+        image: "/images/restaurants/img77.jpg",
         hours: "ทุกวัน 12:00-21:00 น.",
         tel: "064 614 5144",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.250164316673!2d100.51390157529191!3d13.824011295617163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bf2e73f8651%3A0xa090a0e4563962ce!2z4LmA4LiI4Lij4Li04LiN4Liq4Li04Lij4Li0IE1hbGF0dW5nIHNvdXAg4Liq4Liy4LiC4Liy4Lih4LiI4LieLg!5e0!3m2!1sth!2sth!4v1771414138572!5m2!1sth!2sth"
@@ -212,7 +212,7 @@ export const restaurants = [
         price: "$",
         cuisine: "จิ้มจุ่ม",
         status: "เปิดเย็น",
-        image: "/images/restaurants/img77.jpg",
+        image: "/images/restaurants/img81.jpg",
         hours: "ทุกวัน 16:00-23:00 น.",
         tel: "092 808 7413",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.250164316673!2d100.51390157529191!3d13.824011295617163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ba6b297e91b%3A0x66f18a6b9cf47112!2z4LiI4Li04LmJ4Lih4LiI4Li44LmI4Lih4Lir4Lil4Lix4LiH4Lih4LitYnnguJ7guLXguYjguYLguJnguYnguJU!5e0!3m2!1sth!2sth!4v1771414157766!5m2!1sth!2sth"
@@ -224,7 +224,7 @@ export const restaurants = [
         price: "$",
         cuisine: "อาหารไทย",
         status: "เปิดอยู่",
-        image: "/images/restaurants/img81.jpg",
+        image: "/images/restaurants/img85.jpg",
         hours: "อังคาร-อาทิตย์ 9:00-20:00 น.",
         tel: "081 457 1044",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.235330422682!2d100.51284747529195!3d13.824902795596465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9da732e5b1%3A0x6e828b58e51421ed!2z4LiE4Lij4Lix4Lin4Lik4LiB4Lip4LmM4LiU4Li1!5e0!3m2!1sth!2sth!4v1771414178917!5m2!1sth!2sth"
@@ -236,7 +236,7 @@ export const restaurants = [
         price: "$",
         cuisine: "เล้งแซ่บ",
         status: "แซ่บ",
-        image: "/images/restaurants/img85.jpg",
+        image: "/images/restaurants/img89.jpg",
         hours: "ทุกวัน 14:00-20:30 น.",
         tel: "081 840 4280",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.238147520353!2d100.51351987529192!3d13.824733495600345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bb3c70ffaff%3A0x18c81fea371b835c!2z4LmA4Lil4LmJ4LiH4Lil4Li44LiH4LiZ4LmJ4Lit4LiiIGJ5IOC5guC4reC4iuC4suC4m-C5i-C4suC4meC5ieC4reC4og!5e0!3m2!1sth!2sth!4v1771414199181!5m2!1sth!2sth"
@@ -248,7 +248,7 @@ export const restaurants = [
         price: "$",
         cuisine: "อาหารจานเดียว",
         status: "อร่อย",
-        image: "/images/restaurants/img89.jpg",
+        image: "/images/restaurants/img93.jpg",
         hours: "",
         tel: "093 361 1237",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30988.63299292942!2d100.44429947431641!3d13.8642838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ad7a49e0ccd%3A0xb065cab7da123392!2z4LmA4Lit4LmJ4LiBIOC4guC5ieC4suC4p-C4q-C4oeC4ueC5geC4lOC4hy3guKvguKHguLnguIHguKPguK3guJo!5e0!3m2!1sth!2sth!4v1771414255814!5m2!1sth!2sth"
@@ -260,7 +260,7 @@ export const restaurants = [
         price: "$",
         cuisine: "ของหวาน / บิงซู",
         status: "หวานฉ่ำ",
-        image: "/images/restaurants/img93.jpg",
+        image: "/images/restaurants/img97.jpg",
         hours: "วันอาทิตย์-ศุกร์ 13:00-22:00 น.",
         tel: "080 362 9151",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2268256774896!2d100.51334187529191!3d13.825413895584502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b8afc8367ab%3A0xba6302e27f0bacc0!2sKero%20Bingsu%20Caf%C3%A9!5e0!3m2!1sth!2sth!4v1771414274530!5m2!1sth!2sth"
@@ -272,7 +272,7 @@ export const restaurants = [
         price: "$",
         cuisine: "อาหารตามสั่ง",
         status: "เปิดอยู่",
-        image: "/images/restaurants/img97.jpg",
+        image: "/images/restaurants/img101.jpg",
         hours: "ทุกวัน 11:00-21:00 น.",
         tel: "095 362 2487",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7098214278726!2d100.5538838752923!3d13.856448994861658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29cc68a9b10df%3A0xde72aa16d278e46d!2z4LmA4LiI4LmK4Lib4Li44LmK4LiBIOC4reC4suC4q-C4suC4o-C4leC4suC4oeC4quC4seC5iOC4hw!5e0!3m2!1sth!2sth!4v1771414337417!5m2!1sth!2sth"
@@ -284,7 +284,7 @@ export const restaurants = [
         price: "$",
         cuisine: "ก๋วยเตี๋ยว",
         status: "อร่อย",
-        image: "/images/restaurants/img101.jpg",
+        image: "/images/restaurants/img106.jpg",
         hours: "ทุกวัน 10:00-21:00 น.",
         tel: "089 937 9279",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2365784027875!2d100.51363227529194!3d13.82482779559819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b82b21cd825%3A0x207d13ed834cb5fd!2z4Lib4LmK4Lit4LiB4LmGIOC4geC5i-C4p-C4ouC5gOC4leC4teC5i-C4ouC4p-C4meC4seC4geC4oeC4p-C4og!5e0!3m2!1sth!2sth!4v1771414354532!5m2!1sth!2sth"
@@ -297,7 +297,7 @@ export const restaurants = [
         cuisine: "ของหวาน / ชา",
         status: "ยอดนิยม",
         badge: "Must Try",
-        image: "/images/restaurants/img106.jpg",
+        image: "/images/restaurants/img110.jpg",
         hours: "ทุกวัน 10:00-00:30 น.",
         tel: "081 900 7831",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2365784027875!2d100.51363227529194!3d13.82482779559819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29beedd3eedeb%3A0xee7c4bec7c0d797a!2zTUlYVUUgS01VVE5CIC0g4Lih4Li14LmI4LmA4Liq4Lin4Li14LmI4LiiIOC4oeC4iOC4niDguKfguIfguKjguYzguKrguKfguYjguLLguIcgMTEg6Jyc6Zuq5Yaw5Z-O!5e0!3m2!1sth!2sth!4v1771414374252!5m2!1sth!2sth"
@@ -309,7 +309,7 @@ export const restaurants = [
         price: "$",
         cuisine: "เครื่องดื่ม",
         status: "สดชื่น",
-        image: "/images/restaurants/img110.jpg",
+        image: "/images/restaurants/img114.jpg",
         hours: "ทุกวัน 11:00-20:00 น.",
         tel: "",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.236382200853!2d100.51362707509583!3d13.82483958679396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b9851b4274d%3A0xf6e0dddcf265ff13!2z4LiK4Liy4LiK4Lix4LiBLiDguKvguKXguLHguIcuIOC4oeC4iOC4ni_guKPguYnguLLguJnguIrguLLguIrguYrguLLguIE!5e0!3m2!1sth!2sth!4v1771414391559!5m2!1sth!2sth"
@@ -321,7 +321,7 @@ export const restaurants = [
         price: "$",
         cuisine: "เบอร์เกอร์",
         status: "เปิดดึก",
-        image: "/images/restaurants/img114.jpg",
+        image: "/images/restaurants/img118.jpg",
         hours: "ทุกวัน 17:00-03:00 น.",
         tel: "095 321 9444",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.258899485641!2d100.51339227529189!3d13.823486295629376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b006fb3aa99%3A0x8a1c1118b8365104!2sBURGER%20KOOK!5e0!3m2!1sth!2sth!4v1771414439201!5m2!1sth!2sth"
@@ -333,7 +333,7 @@ export const restaurants = [
         price: "$",
         cuisine: "ก๋วยเตี๋ยว",
         status: "เปิดดึก",
-        image: "/images/restaurants/img118.jpg",
+        image: "/images/restaurants/img122.jpg",
         hours: "ทุกวัน 17:00-03:00 น.",
         tel: "098 249 4925",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2845207714217!2d100.5166644752919!3d13.821946295665192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b005e0cfa45%3A0xd063473cccfead0b!2z4LiB4LmL4Lin4Lii4LmA4LiV4Li14LmL4Lii4Lin4LiV4Li44LmL4LiZ4LiV4Li1Mw!5e0!3m2!1sth!2sth!4v1771414473990!5m2!1sth!2sth"
@@ -345,7 +345,7 @@ export const restaurants = [
         price: "$",
         cuisine: "ก๋วยจั๊บญวณ",
         status: "อร่อย",
-        image: "/images/restaurants/img122.jpg",
+        image: "/images/restaurants/img126.jpg",
         hours: "อาทิตย์-ศุกร์ 16:00-22:00 น.",
         tel: "",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2602787806804!2d100.51329927529187!3d13.823403395631297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b00375e143d%3A0x937fc0c7d33ad6a3!2z4LiZ4LmJ4Lit4LiH4LmA4LiU4Lii4LmM4LiB4LmL4Lin4Lii4LiI4Lix4LmK4Lia4LiN4Lin4LiT!5e0!3m2!1sth!2sth!4v1771414497002!5m2!1sth!2sth"
@@ -357,113 +357,9 @@ export const restaurants = [
         price: "$",
         cuisine: "กาแฟ / ส้มตำ",
         status: "แซ่บ",
-        image: "/images/restaurants/img126.jpg",
+        image: "/images/restaurants/img132.jpg",
         hours: "ทุกวัน 11:00-23:00 น.",
         tel: "088 885 1914",
         mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.231117192812!2d100.51298307529194!3d13.825155995590553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b3e408dbcdd%3A0x99b7c35af1fbd04a!2z4LiV4Liz4LmB4LiL4LmI4LiaIOC4p-C4h-C4qOC5jOC4quC4p-C5iOC4suC4hyDguIsuMTE!5e0!3m2!1sth!2sth!4v1771414522641!5m2!1sth!2sth"
     },
-    {
-        name: "ร้านค้าพี่ปอ",
-        description: "ร้านสะดวกซื้อและของกินเล่น ฝากท้องยามดึกได้เสมอ",
-        location: "ใกล้ มจพ.",
-        price: "$",
-        cuisine: "ร้านค้าทั่วไป",
-        status: "เปิดดึก",
-        image: "/images/restaurants/img132.jpg",
-        hours: "ทุกวัน 09:00-03:00 น.",
-        tel: "",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.671884054271!2d101.39109097531393!3d15.394246357153495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311effd95d3963f9%3A0x9523a55c5de15ef8!2z4Lij4LmJ4Liy4LiZ4LiE4LmJ4Liy4Lie4Li14LmI4Lib4Lit!5e0!3m2!1sth!2sth!4v1771414568204!5m2!1sth!2sth"
-    },
-    {
-        name: "COMMU Rooftop Cafe",
-        description: "คาเฟ่ลับบนดาดฟ้า Grove Residences บรรยากาศชิลล์ วิวสวย เหมาะนั่งทำงานหรือสังสรรค์",
-        location: "Grove Residences",
-        price: "$$",
-        cuisine: "คาเฟ่ / Rooftop",
-        status: "เปิดอยู่",
-        image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.2373870903516!2d100.51394057529191!3d13.824779195599284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b6a70fa81d3%3A0x6b82d36fb766eaf9!2sCOMMU%20Rooftop%20Cafe!5e0!3m2!1sth!2sth!4v1771414586964!5m2!1sth!2sth"
-    },
-    {
-        name: "Ripple Coffee Roasters",
-        description: "Specialty Coffee สไตล์ญี่ปุ่น มินิมอล เรียบง่ายแต่ใส่ใจทุกแก้ว พร้อมเบเกอรีโฮมเมด",
-        location: "ใกล้ MRT วงศ์สว่าง",
-        price: "$$",
-        cuisine: "กาแฟ / เบเกอรี",
-        status: "ใหม่",
-        badge: "Must Try",
-        image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.1819539251837!2d100.52358737529188!3d13.828110195521763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29bc6e7675a1d%3A0xf46b9b128174ae7d!2z4Lij4Li04Lib4LmA4Lib4Li04LilIOC4hOC4reC4n-C4n-C4teC5iCDguYLguKPguKrguYDguJXguK3guKPguYzguKo!5e0!3m2!1sth!2sth!4v1771414605014!5m2!1sth!2sth"
-    },
-    {
-        name: "So Grill & Shabu",
-        description: "บุฟเฟ่ต์ทะเลเผาและชาบู วัตถุดิบสดใหม่ กุ้ง ปู จัดเต็ม น้ำจิ้มรสเด็ด",
-        location: "Market Place",
-        price: "$$$",
-        cuisine: "บุฟเฟ่ต์ / ปิ้งย่าง",
-        status: "มาแรง",
-        image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123973.7383017362!2d100.44376066470095!3d13.828268333591028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b00679bf401%3A0x5898c12d8332e7ce!2z4LmC4LiL4Lil4LiB4Lij4Li04Lil4Lil4LmMIOC5geC4reC4meC4lOC5jCDguIrguLLguJrguLkg4Liq4Liy4LiC4LiyIOC4oeC4suC4o-C5jOC5gOC4geC5h-C4leC5gOC4nuC4peC4qiDguKfguIfguKjguYzguKrguKfguYjguLLguIc!5e0!3m2!1sth!2sth!4v1771414625840!5m2!1sth!2sth"
-    },
-    {
-        name: "Friend's Corner",
-        description: "คาเฟ่โทนสีแดงสุดน่ารัก บรรยากาศอบอุ่น เครื่องดื่มอร่อย มุมถ่ายรูปเยอะ",
-        location: "ย่านวงศ์สว่าง",
-        price: "$$",
-        cuisine: "คาเฟ่ / ของหวาน",
-        status: "ชิลล์",
-        image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.1329335108985!2d100.522807575292!3d13.831055195453255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b3778d395ed%3A0x6205112f514f8fee!2sFriend&#39;s%20Corner!5e0!3m2!1sth!2sth!4v1771414652739!5m2!1sth!2sth"
-    },
-    {
-        name: "Viet Cuisine Garden Cafe",
-        description: "อาหารเวียดนามรสต้นตำรับ แหนมเนือง กุ้งพันอ้อย ในบรรยากาศสวนร่มรื่น",
-        location: "ประชาชื่น-วงศ์สว่าง",
-        price: "$$",
-        cuisine: "อาหารเวียดนาม",
-        status: "แนะนำ",
-        image: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.216009179781!2d100.52406217529197!3d13.826063895569414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b7b52709a4d%3A0xb9e33fb6e2cda34c!2sViet%20Cuisine%20Garden%20and%20Cafe%20Wongsawang!5e0!3m2!1sth!2sth!4v1771414674137!5m2!1sth!2sth"
-    },
-    {
-        name: "Bleu Home Kitchen",
-        description: "อาหารโฮมเมด ข้าวกะเพราเนื้อโคขุน โรตีทอดกรอบ และเมนูฟิวชั่น",
-        location: "วงศ์สว่าง 11",
-        price: "$$",
-        cuisine: "โฮมเมด / ฟิวชั่น",
-        status: "เปิดอยู่",
-        image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.1013219844763!2d100.52289127529203!3d13.832953995409028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d68953c1761%3A0xf1c6c6ca2f0d952c!2zQkxFVSBIb21lIEtpdGNoZW4g4LmA4Lia4Lil4LitIOC5guC4ruC4oeC4hOC4tOC4l-C5gOC4iuC5iOC4mQ!5e0!3m2!1sth!2sth!4v1771414726796!5m2!1sth!2sth"
-    },
-    {
-        name: "มาม่าหม้อไฟ",
-        description: "มาม่าหม้อไฟรสแซ่บ ไซส์ยักษ์ เครื่องแน่น ราคาประหยัด",
-        location: "วงศ์สว่าง 11",
-        price: "$",
-        cuisine: "หม้อไฟ",
-        status: "ขวัญใจนักเรียน",
-        image: "https://images.unsplash.com/photo-1585238342024-78d387f4a707?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15496.403568668455!2d100.51516645236838!3d13.832979811356958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b2abcd62421%3A0x8edda24027ed5b62!2z4LiX4Liw4LmA4Lil4LiW4Lix4LiHIOC4oeC4suC4oeC5iOC4suC4q-C4oeC5ieC4reC5hOC4nyBCeSDguJ7guLXguYjguYHguJXguYnguKcm4Lie4Li14LmI4LiK4Lix4Lii!5e0!3m2!1sth!2sth!4v1771414807104!5m2!1sth!2sth"
-    },
-    {
-        name: "Ritchii Bakery",
-        description: "อาหารเกาหลีฟาสต์ฟู้ดและเบเกอรี เค้กโฮมเมด ราคาน่ารัก",
-        location: "วงศ์สว่าง 11",
-        price: "$",
-        cuisine: "เกาหลี / เบเกอรี",
-        status: "หวานฉ่ำ",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123990.48521070658!2d100.4840764517762!3d13.796789513952671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29df3acd66e93%3A0x4d3bcc0aaaa81d0!2sRichy%20Bakery!5e0!3m2!1sth!2sth!4v1771414857314!5m2!1sth!2sth"
-    },
-    {
-        name: "ลาบทองสร้อย",
-        description: "ลาบก้อย ซอยจุ๊ เนื้อสด สะอาด รสชาติอีสานแท้ๆ",
-        location: "ประชาชื่น",
-        price: "$",
-        cuisine: "อีสาน / เนื้อสด",
-        status: "แซ่บ",
-        badge: "ลองเลย",
-        image: "https://images.unsplash.com/photo-1574484284002-952d92456975?q=80&w=800&auto=format&fit=crop",
-        mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.260368625904!2d100.53404367529194!3d13.823397995631478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b717ef79359%3A0xb9308eb7bba481c!2z4Lil4Liy4Lia4LiX4Lit4LiH4Liq4Lij4LmJ4Lit4Lii!5e0!3m2!1sth!2sth!4v1771414875312!5m2!1sth!2sth"
-    }
 ];

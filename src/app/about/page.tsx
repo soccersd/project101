@@ -1,57 +1,46 @@
 "use client";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Navbar from "../components/Navbar";
 import FloatingButton from "../components/FloatingButton";
 import AmbientLightLite from "../components/AmbientLightLite";
 
-const team = [
+const features = [
     {
-        name: "สมชาย ใจดี",
-        role: "บรรณาธิการบริหาร",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
-        bio: "อดีตนักชิมระดับมืออาชีพ ผ่านการลองร้านมากกว่า 500 ร้านในกรุงเทพฯ"
+        title: "รูปภาพร้าน",
+        description: "ภาพถ่ายจริงจากหน้าร้าน เพื่อให้รู้จักร้านก่อนไปถึง"
     },
     {
-        name: "วิมล สุขสันต์",
-        role: "บรรณาธิการอาหาร",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=faces",
-        bio: "เชฟผู้หลงใหลในอาหารท้องถิ่น กับประสบการณ์ในร้านอาหารระดับ Fine Dining"
+        title: "ประเภทของร้าน",
+        description: "แบ่งหมวดหมู่ทั้งร้านอาหารและร้านบริการ ค้นหาง่าย"
     },
     {
-        name: "ณัฐพล อารมณ์ดี",
-        role: "ช่างภาพ",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces",
-        bio: "ช่างภาพอาหารมืออาชีพ เชี่ยวชาญการถ่ายภาพที่ทำให้คุณหิว"
+        title: "เวลาเปิด–ปิด",
+        description: "ข้อมูลเวลาทำการของแต่ละร้าน ไม่ต้องเสียเที่ยว"
     },
     {
-        name: "พิมพ์ลดา รักษ์ย่าน",
-        role: "นักเขียน",
-        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=faces",
-        bio: "นักเขียนผู้หลงใหลในเรื่องราวเบื้องหลังร้านอาหารและคนทำอาหาร"
+        title: "เบอร์โทรศัพท์",
+        description: "ติดต่อร้านค้าได้โดยตรง สอบถามหรือสั่งจองล่วงหน้า"
+    },
+    {
+        title: "แผนที่ตั้งร้าน",
+        description: "แผนที่ Google Maps ในตัว นำทางไปถึงร้านได้ทันที"
     },
 ];
 
-const values = [
+const objectives = [
+    "เพื่อรวบรวมข้อมูลร้านอาหารและร้านบริการในซอยวงศ์สว่าง 11",
+    "เพื่อพัฒนาเว็บไซต์ที่ใช้งานง่ายและเข้าถึงได้สะดวก",
+    "เพื่อสนับสนุนร้านค้าในชุมชนให้เป็นที่รู้จักมากขึ้น",
+];
+
+const creators = [
     {
-        icon: "",
-        title: "ความซื่อสัตย์",
-        description: "เราไปทุกร้านแบบไม่เปิดเผยตัวตน และจ่ายเงินเต็มราคาเอง เพื่อให้ได้รีวิวที่เป็นกลางที่สุด"
+        name: "นางสาวจุฑามณี ทองคำ",
+        initial: "จ",
     },
     {
-        icon: "",
-        title: "คุณภาพ",
-        description: "เราเลือกเฉพาะร้านที่ผ่านการทดสอบหลายครั้ง ไม่ใช่แค่ไปครั้งเดียวแล้วเขียน"
-    },
-    {
-        icon: "",
-        title: "ความหลากหลาย",
-        description: "เรานำเสนอร้านทุกระดับราคา ตั้งแต่ Street Food ไปจนถึง Fine Dining"
-    },
-    {
-        icon: "",
-        title: "ความรักในท้องถิ่น",
-        description: "เราสนับสนุนร้านท้องถิ่น และช่วยให้ของดีในย่านถูกค้นพบ"
+        name: "นางสาวอาริยา หาญพิชัย",
+        initial: "อ",
     },
 ];
 
@@ -80,7 +69,7 @@ export default function AboutPage() {
                             style={{ transitionDelay: "0.1s" }}
                         >
                             <span className="w-2 h-2 rounded-full bg-gradient-to-r from-orange-400 to-amber-500 animate-pulse"></span>
-                            <span className="text-[11px] font-semibold text-zinc-600 uppercase tracking-widest">Our Story</span>
+                            <span className="text-[11px] font-semibold text-zinc-600 uppercase tracking-widest">About Us</span>
                         </div>
 
                         <h1 className="font-serif-display text-5xl md:text-7xl font-medium text-zinc-950 mb-6 leading-tight">
@@ -99,123 +88,99 @@ export default function AboutPage() {
                         </h1>
 
                         <p
-                            className={`text-zinc-500 max-w-2xl mx-auto font-light leading-relaxed text-lg transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+                            className={`text-zinc-500 max-w-3xl mx-auto font-light leading-relaxed text-lg transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                             style={{ transitionDelay: "0.35s" }}
                         >
-                            เราเชื่อว่าทุกมื้ออาหารคือโอกาสที่จะค้นพบสิ่งพิเศษ Provisions คือไกด์ที่จะพาคุณไปยังร้านที่ดีที่สุดในย่าน โดยทีมบรรณาธิการที่รักในอาหารและชุมชนท้องถิ่น
+                            จัดทำขึ้นเพื่อรวบรวมข้อมูลร้านอาหารและร้านบริการภายในซอยวงศ์สว่าง 11
+                            โดยมีวัตถุประสงค์เพื่ออำนวยความสะดวกให้แก่ประชาชน นักศึกษา
+                            และผู้ที่พักอาศัยในบริเวณดังกล่าว สามารถค้นหาข้อมูลร้านค้าได้อย่างรวดเร็วและง่ายต่อการตัดสินใจ
                         </p>
                     </div>
 
-                    {/* Mission Section */}
+                    {/* Features Section */}
                     <div
                         className={`mb-24 transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                         style={{ transitionDelay: "0.5s" }}
                     >
-                        <div className="grid lg:grid-cols-2 gap-12 items-center">
-                            <div className="relative">
-                                <div className="absolute -inset-4 bg-gradient-to-r from-orange-100 to-amber-50 rounded-3xl -rotate-2"></div>
-                                <Image
-                                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
-                                    alt="Our Mission"
-                                    width={800}
-                                    height={600}
-                                    className="relative rounded-2xl object-cover w-full aspect-[4/3] shadow-xl"
-                                />
-                            </div>
-                            <div>
-                                <h2 className="font-serif-display text-3xl md:text-4xl font-medium text-zinc-900 mb-6">
-                                    พันธกิจของเรา
-                                </h2>
-                                <p className="text-zinc-600 leading-relaxed mb-6">
-                                    Provisions เกิดจากความหงุดหงิดที่หาร้านอาหารดีๆ ในย่านได้ยาก รีวิวออนไลน์ส่วนใหญ่ถูกจ่ายมา หรือไม่ก็มาจากคนที่ไปแค่ครั้งเดียว
-                                </p>
-                                <p className="text-zinc-600 leading-relaxed mb-6">
-                                    เราจึงตั้งใจสร้างไกด์ที่เชื่อถือได้ โดยทีมที่ไปกินจริง จ่ายเงินเอง และกลับไปหลายครั้งก่อนจะเขียนรีวิว ไม่มีโฆษณาแฝง ไม่มีการรับเงินจากร้าน
-                                </p>
-                                <div className="flex items-center gap-4">
-                                    <div className="flex -space-x-3">
-                                        {team.slice(0, 3).map((member, i) => (
-                                            <Image
-                                                key={i}
-                                                src={member.image}
-                                                alt={member.name}
-                                                width={40}
-                                                height={40}
-                                                className="w-10 h-10 rounded-full border-2 border-white object-cover"
-                                            />
-                                        ))}
-                                    </div>
-                                    <p className="text-sm text-zinc-500">
-                                        ทีมงาน 4 คน ที่รักในอาหาร
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Values Section */}
-                    <div
-                        className={`mb-24 transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                        style={{ transitionDelay: "0.6s" }}
-                    >
                         <div className="text-center mb-12">
                             <h2 className="font-serif-display text-3xl md:text-4xl font-medium text-zinc-900 mb-4">
-                                สิ่งที่เรายึดมั่น
+                                ข้อมูลที่แสดงในเว็บไซต์
                             </h2>
                             <p className="text-zinc-500 max-w-lg mx-auto">
-                                หลักการที่เราใช้ในการคัดเลือกและรีวิวร้านอาหาร
+                                เว็บไซต์นี้แสดงรายละเอียดของร้านค้า เพื่อให้ผู้ใช้งานสามารถเข้าถึงข้อมูลได้ครบถ้วน
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {values.map((value, index) => (
+                        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                            {features.map((feature, index) => (
                                 <div
                                     key={index}
-                                    className={`bg-zinc-50/50 rounded-2xl p-6 border border-zinc-100 hover:bg-white hover:border-orange-200 hover:shadow-lg hover:shadow-orange-100/50 transition-all duration-300 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                                    style={{ transitionDelay: `${0.7 + index * 0.1}s` }}
+                                    className={`bg-zinc-50/50 rounded-2xl p-6 border border-zinc-100 hover:bg-white hover:border-orange-200 hover:shadow-lg hover:shadow-orange-100/50 transition-all duration-300 text-center ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                                    style={{ transitionDelay: `${0.6 + index * 0.08}s` }}
                                 >
-                                    <div className="text-3xl mb-4">{value.icon}</div>
-                                    <h3 className="font-semibold text-zinc-900 mb-2">{value.title}</h3>
-                                    <p className="text-sm text-zinc-500 leading-relaxed">{value.description}</p>
+                                    <h3 className="font-semibold text-zinc-900 mb-2">{feature.title}</h3>
+                                    <p className="text-sm text-zinc-500 leading-relaxed">{feature.description}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Team Section */}
+                    {/* Objectives Section */}
+                    <div
+                        className={`mb-24 transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+                        style={{ transitionDelay: "0.7s" }}
+                    >
+                        <div className="max-w-3xl mx-auto">
+                            <div className="text-center mb-12">
+                                <h2 className="font-serif-display text-3xl md:text-4xl font-medium text-zinc-900 mb-4">
+                                    วัตถุประสงค์
+                                </h2>
+                            </div>
+
+                            <div className="space-y-4">
+                                {objectives.map((objective, index) => (
+                                    <div
+                                        key={index}
+                                        className={`flex items-start gap-4 p-5 bg-gradient-to-r from-zinc-50 to-white rounded-xl border border-zinc-100 hover:border-orange-200 hover:shadow-md hover:shadow-orange-50 transition-all duration-300 ${isLoaded ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
+                                        style={{ transitionDelay: `${0.8 + index * 0.1}s` }}
+                                    >
+                                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-md">
+                                            {index + 1}
+                                        </div>
+                                        <p className="text-zinc-700 leading-relaxed pt-0.5">{objective}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Creators Section */}
                     <div
                         className={`transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                        style={{ transitionDelay: "0.8s" }}
+                        style={{ transitionDelay: "0.9s" }}
                     >
                         <div className="text-center mb-12">
                             <h2 className="font-serif-display text-3xl md:text-4xl font-medium text-zinc-900 mb-4">
-                                พบทีมบรรณาธิการ
+                                ผู้จัดทำ
                             </h2>
-                            <p className="text-zinc-500 max-w-lg mx-auto">
-                                คนตัวเล็กๆ ที่รักในอาหาร และมุ่งมั่นที่จะค้นหาร้านดีๆ มาให้คุณ
-                            </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {team.map((member, index) => (
+                        <div className="flex flex-wrap justify-center gap-8">
+                            {creators.map((creator, index) => (
                                 <div
                                     key={index}
                                     className={`group text-center transition-all duration-500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                                    style={{ transitionDelay: `${0.9 + index * 0.1}s` }}
+                                    style={{ transitionDelay: `${1.0 + index * 0.15}s` }}
                                 >
-                                    <div className="relative mb-4 mx-auto w-32 h-32">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full opacity-0 group-hover:opacity-100 scale-105 transition-all duration-300"></div>
-                                        <Image
-                                            src={member.image}
-                                            alt={member.name}
-                                            width={128}
-                                            height={128}
-                                            className="relative w-full h-full rounded-full object-cover border-4 border-white shadow-lg group-hover:scale-95 transition-transform duration-300"
-                                        />
+                                    <div className="relative mb-4 mx-auto w-28 h-28">
+                                        <div className="absolute inset-0 bg-gradient-to-br from-orange-400 to-amber-500 rounded-full opacity-0 group-hover:opacity-100 scale-110 transition-all duration-300"></div>
+                                        <div className="relative w-full h-full rounded-full bg-gradient-to-br from-orange-100 to-amber-50 border-4 border-white shadow-lg group-hover:scale-95 transition-transform duration-300 flex items-center justify-center">
+                                            <span className="text-3xl font-bold bg-gradient-to-br from-orange-500 to-amber-600 bg-clip-text text-transparent">
+                                                {creator.initial}
+                                            </span>
+                                        </div>
                                     </div>
-                                    <h3 className="font-semibold text-zinc-900 mb-1">{member.name}</h3>
-                                    <p className="text-sm text-orange-600 mb-2">{member.role}</p>
-                                    <p className="text-xs text-zinc-500 leading-relaxed">{member.bio}</p>
+                                    <h3 className="font-semibold text-zinc-900 text-sm">{creator.name}</h3>
                                 </div>
                             ))}
                         </div>
