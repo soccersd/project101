@@ -41,12 +41,6 @@ export default function ServicesPage() {
                             >
                                 รวมร้านบริการ
                             </span>
-                            <span
-                                className={`block bg-gradient-to-r from-zinc-400 to-zinc-300 bg-clip-text text-transparent italic transition-all duration-700 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                                style={{ transitionDelay: "0.25s" }}
-                            >
-                                ใกล้บ้านคุณ
-                            </span>
                         </h1>
 
                         <p
