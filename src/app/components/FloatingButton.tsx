@@ -30,10 +30,10 @@ const FloatingButton = () => {
     };
 
     return (
-        <div className="fixed top-6 right-6 z-50 hidden md:block">
+        <div className="fixed bottom-6 right-4 md:top-6 md:bottom-auto md:right-6 z-50">
             <button
                 onClick={toggleAudio}
-                className="group relative flex items-center justify-center w-12 h-12 rounded-full bg-white/90 backdrop-blur-xl border border-white/20 shadow-lg shadow-zinc-200/20 transition-all duration-500 hover:scale-110 hover:shadow-orange-500/20 hover:border-orange-100/50"
+                className="group relative flex items-center justify-center w-11 h-11 md:w-12 md:h-12 rounded-full bg-white/90 backdrop-blur-xl border border-white/20 shadow-lg shadow-zinc-200/20 transition-all duration-500 hover:scale-110 hover:shadow-orange-500/20 hover:border-orange-100/50 active:scale-95"
             >
                 {/* Pulse Effect when playing */}
                 {isPlaying && (
